@@ -1,0 +1,12 @@
+<div class="info-bar">
+  <div class="background-line"></div>
+  <div class="info-background"></div>
+  <div class="social-links">
+    <a [class.active]="activeSection === 'home'" (click)="scrollToSection('#home')" class="social-link hover-text">Home</a>
+    <a [class.active]="activeSection === 'about'" (click)="scrollToSection('#about')" class="social-link hover-text">About Me</a>
+    <a [class.active]="activeSection === 'resume'" (click)="scrollToSection('#resume')" class="social-link hover-text">Resume</a>
+    <a [class.active]="activeSection === 'projects'" (click)="scrollToSection('#projects')" class="social-link hover-text">Projects</a>
+    <a [class.active]="activeSection === 'socials'" (click)="scrollToSection('#socials')" class="social-link hover-text">Socials</a>
+    <a [class.active]="activeSection === 'contact'" (click)="scrollToSection('#contact')" class="social-link hover-text">Contact Me</a>
+  </div>
+</div>
