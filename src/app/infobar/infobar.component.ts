@@ -1,6 +1,6 @@
 import {Component, HostListener} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HomepanelComponent} from "../homepanel/homepanel.component";
+import {HomepanelComponent} from "../content/homepanel/homepanel.component";
 import {RouterLink} from "@angular/router";
 @Component({
   selector: 'app-infobar',
@@ -22,8 +22,12 @@ export class InfobarComponent {
     const targetSection = document.querySelector(sectionId);
 
     if (targetSection) {
-      targetSection.scrollIntoView({
-        behavior: 'smooth' // Add this option for smooth scrolling
+      const yOffset = 60; // Adjust this value to your desired scroll offset
+      const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - yOffset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
       });
     }
   }

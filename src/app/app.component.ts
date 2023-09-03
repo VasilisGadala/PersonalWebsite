@@ -5,11 +5,11 @@ import { Component } from '@angular/core';
   template: `
     <main>
       <section class="info">
-        <app-homepanel></app-homepanel>
+        <app-content></app-content>
         <app-infobar></app-infobar>
       </section>
-<!--      <section class = "new"><app-infopanel></app-infopanel></section>-->
     </main>
+
   `,
   styleUrls: ['./app.component.css']
 })
