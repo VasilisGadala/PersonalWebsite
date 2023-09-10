@@ -1,0 +1,109 @@
+.experience-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000000;
+  background-size: cover;
+}
+
+.aboutMain-text {
+  padding-top: 120px;
+  margin: 0;
+  font-size: 50px;
+  color: #ffffff;
+
+}
+
+.aboutContent-text {
+  font-family: "Baskerville", serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #999999;
+  text-align: center;
+  /*padding-left: 15%;*/
+  /*padding-right: 20%;*/
+  padding-top: 60px;
+}
+
+.aboutHeader-text {
+  font-family: "Baskerville", serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #999999;
+  padding-left: 20%;
+  padding-right: 25%;
+
+}
+
+.aboutParagraph-text {
+  font-family: "Baskerville", serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #999999;
+  padding-left: 20%;
+  padding-right: 25%;
+}
+
+
+.centered-text {
+  font-family: "Baskerville", serif;
+  font-weight: normal;
+  text-align: center;
+}
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.left-content {
+  padding-right: 20px;
+  color: #D2B48C;
+  flex: 2;
+  width: 40%; /* Left side takes up 33% of the screen */
+  background-color: #000000; /* Left side background color */
+  display: flex;
+  flex-direction: column; /* Stack h2 and p vertically */
+  align-items: flex-end; /* Center horizontally */
+  justify-content: flex-start; /* Start content from the top */
+}
+
+.left-content p {
+  color: #fff;
+}
+
+.right-content {
+  color: #666666;
+  flex: 3;
+  font-size: 24px;
+  width: 60%; /* Right side takes up 67% of the screen */
+  background-color: #000000; /* Right side background color */
+  padding: 10px 20px 0;
+  display: grid;
+  flex-direction: column; /* Stack h2 and p vertically */
+  align-items: flex-start; /* Center horizontally */
+  justify-content: flex-start; /* Start content from the top */
+}
+
+.split-line {
+  width: 1px; /* Set the width of the vertical line */
+  background-color: #666666; /* Vertical line color */
+  padding-top: 20px;
+  /*margin-top: 100px; !* Start the line 100px below the top *!*/
+}
+/* Additional styles for paragraphs */
+
+.left-paragraph {
+  padding-left: 40%;
+  margin-top: 5px;
+}
+
+
+fade-in {
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

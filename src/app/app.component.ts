@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <main>
+      <app-content></app-content>
       <section class="info">
-        <app-content></app-content>
         <app-infobar></app-infobar>
       </section>
     </main>

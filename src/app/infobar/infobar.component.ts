@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import  {Component, HostListener} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {HomepanelComponent} from "../content/homepanel/homepanel.component";
 import {RouterLink} from "@angular/router";
@@ -22,7 +22,7 @@ export class InfobarComponent {
     const targetSection = document.querySelector(sectionId);
 
     if (targetSection) {
-      const yOffset = 60; // Adjust this value to your desired scroll offset
+      const yOffset = 0; // Adjust this value to your desired scroll offset
       const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - yOffset;
 
       window.scrollTo({
@@ -33,7 +33,7 @@ export class InfobarComponent {
   }
 
   detectActiveSection() {
-    const sections = ['home', 'about', 'resume', 'projects', 'socials', 'contact'];
+    const sections = ['home', 'about', 'resume', 'resume', 'projects'];
 
     for (const section of sections) {
       const element = document.getElementById(section);

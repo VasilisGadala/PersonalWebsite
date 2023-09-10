@@ -1,12 +1,16 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Your existing CSS styles here */
 .background-image {
-  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url('https://wallpapers.com/images/featured/pure-black-amh1tqh06166z417.jpg') center/cover no-repeat;
   filter: opacity(0.3);
-
 }
 
 .centered-content {
@@ -21,11 +25,28 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /*border: 2px solid #FFA500; !* Change to your desired border color *!*/
 }
 
 .centered-text {
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Baskerville", serif;
   font-weight: normal;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+  margin: 0; /* Adjust the spacing between the images as needed */
+}
+
+.center-image {
+  padding-left: 30%;
+  padding-right: 30%;
+  /*position: absolute; !* Adjust the spacing between the images as needed *!*/
 }
