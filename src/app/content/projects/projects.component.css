@@ -49,3 +49,15 @@
   padding-right: 15%;
 }
 
+/* Initial state, divs are initially hidden */
+.fade-in-div {
+  opacity: 0;
+  /* Set the background color directly, it won't fade in */
+  transition: opacity 2s; /* Transition only opacity */
+}
+
+/* Fade in when the element is in the viewport */
+.fade-in-div.fade-in {
+  opacity: 1;
+  /* Keep the background color constant */
+}

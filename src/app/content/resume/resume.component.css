@@ -99,11 +99,15 @@
   margin-top: 5px;
 }
 
-
-fade-in {
-  animation: fadeIn 5s;
+/* Initial state, divs are initially hidden */
+.fade-in-div {
+  opacity: 0;
+  /* Set the background color directly, it won't fade in */
+  transition: opacity 2s; /* Transition only opacity */
 }
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+
+/* Fade in when the element is in the viewport */
+.fade-in-div.fade-in {
+  opacity: 1;
+  /* Keep the background color constant */
 }
