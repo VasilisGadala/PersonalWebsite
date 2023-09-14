@@ -18,13 +18,9 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-<<<<<<< HEAD
-  object-fit: contain;
-=======
   object-fit: fill;
   width: 100vw;
   height: 100vh;
->>>>>>> 136f83d1038ed0332a6ce91de16ce8b2f8546b51
   /*transform: translate(0, -80px); !* Vertically center the video *!*/
   filter: brightness(0.6);
   opacity: 0.6;
