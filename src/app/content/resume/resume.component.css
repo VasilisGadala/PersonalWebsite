@@ -57,33 +57,42 @@
   font-size: 20px;
 }
 
+/* Add this CSS to your stylesheet */
 .left-content {
   padding-right: 20px;
   color: #D2B48C;
   flex: 2;
-  width: 40%; /* Left side takes up 33% of the screen */
+  width: 40%; /* Left side takes up 40% of the screen */
   background-color: #000000; /* Left side background color */
-  display: flex;
-  flex-direction: column; /* Stack h2 and p vertically */
-  align-items: flex-end; /* Center horizontally */
+  display: inline-block; /* Use inline-block for layout */
+  box-sizing: border-box; /* Use border-box for box model */  grid-template-columns: 1fr; /* Create one column for content */
+  align-items: flex-end; /* Align items to the bottom */
   justify-content: flex-start; /* Start content from the top */
 }
 
 .left-content p {
   color: #fff;
+  display: inline-block; /* Use inline-block for layout */
+  box-sizing: border-box; /* Use border-box for box model */
 }
 
 .right-content {
   color: #666666;
-  flex: 3;
   font-size: 24px;
-  width: 60%; /* Right side takes up 67% of the screen */
+  width: 60%; /* Right side takes up 60% of the screen */
   background-color: #000000; /* Right side background color */
-  padding: 10px 20px 0;
-  display: grid;
-  flex-direction: column; /* Stack h2 and p vertically */
-  align-items: flex-start; /* Center horizontally */
-  justify-content: flex-start; /* Start content from the top */
+  padding: 0 10% 0 20px;
+  display: inline-block; /* Use inline-block for layout */
+  box-sizing: border-box; /* Use border-box for box model */
+}
+
+.right-paragraph {
+  color: #666666; /* Set text color for right-paragraph */
+  display: inline-block; /* Use inline-block for layout */
+  vertical-align: top; /* Align top of right-paragraph with top of container */
+  margin-left: 20px; /* Adjust as needed for spacing */
+  width: calc(100% - 20px); /* Calculate width to account for margin */
+  box-sizing: border-box; /* Use border-box for box model */
 }
 
 .split-line {
